@@ -1,5 +1,6 @@
 const {Client, MessageEmbed} = require('discord.js'); //llamamos a la libreria que vamos a usar en este caso discord.js, agregamos messageEmbed para cuando creamos un embed no tengamos que poner discord.
 const client = new Client(); //declaramos client
+const prefix = "$" //lo podes cambiar si queres este sera tu prefix para ejecutar los comandos.
 function presence(){ //esto es opcional pero es el presente del bot
   client.user.setPresence({
     activity: {
